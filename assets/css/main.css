@@ -64,6 +64,8 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  direction: rtl;
+  text-align: right;
 }
 
 a {
@@ -154,12 +156,14 @@ h6 {
 }
 
 .header .logo {
-  line-height: 1;
+  height: auto;
 }
 
 .header .logo img {
-  max-height: 32px;
+  width: 50px; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
   margin-right: 8px;
+  margin-left: 5px;
 }
 
 .header .logo h1 {
@@ -171,6 +175,12 @@ h6 {
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+.slogan {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #666; /* Adjust the color as needed */
 }
 
 /* Global Header on Scroll
@@ -814,6 +824,7 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
+  text-align: right;
 }
 
 .hero h1 {
@@ -1259,6 +1270,7 @@ section,
 .testimonials .container {
   position: relative;
   z-index: 3;
+  text-align: right;
 }
 
 .testimonials .testimonials-carousel,
@@ -1574,6 +1586,8 @@ section,
 
 .faq .faq-container {
   margin-top: 15px;
+  text-align: right;
+
 }
 
 .faq .faq-container .faq-item {
@@ -1583,10 +1597,14 @@ section,
   margin-bottom: 20px;
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  text-align: right;
+
 }
 
 .faq .faq-container .faq-item:last-child {
   margin-bottom: 0;
+  text-align: right;
+
 }
 
 .faq .faq-container .faq-item h3 {
@@ -1596,15 +1614,21 @@ section,
   margin: 0 30px 0 32px;
   transition: 0.3s;
   cursor: pointer;
+  text-align: right;
+
 }
 
 .faq .faq-container .faq-item h3 span {
   color: var(--accent-color);
   padding-right: 5px;
+  text-align: right;
+
 }
 
 .faq .faq-container .faq-item h3:hover {
   color: var(--accent-color);
+  text-align: right;
+
 }
 
 .faq .faq-container .faq-item .faq-content {
@@ -1613,6 +1637,8 @@ section,
   transition: 0.3s ease-in-out;
   visibility: hidden;
   opacity: 0;
+  text-align: right;
+
 }
 
 .faq .faq-container .faq-item .faq-content p {
