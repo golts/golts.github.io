@@ -1784,6 +1784,8 @@ section,
   border-radius: 5px;
   border: 2px solid #ccc;
   width: 100%; /* Ensure full width in mobile */
+  text-align: right; /* Align text and placeholder to the right */
+  direction: rtl; /* Ensure proper alignment in RTL context */
 }
 
 @media (max-width: 768px) {
