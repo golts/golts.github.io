@@ -200,7 +200,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
   }
@@ -329,10 +329,10 @@ h6 {
     left: -100%;
     visibility: visible;
   }
-}
+} */
 
 /* Mobile Navigation */
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -455,7 +455,7 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -474,7 +474,7 @@ h6 {
 
 .footer .footer-about .logo {
   line-height: 1;
-  margin-bottom: 25px;
+  margin-bottom: 1px;
 }
 
 .footer .footer-about .logo img {
@@ -1114,7 +1114,7 @@ section,
 
 .features .features-item i {
   font-size: 32px;
-  padding-right: 10px;
+  padding-left: 10px;
   line-height: 0;
 }
 
@@ -1799,9 +1799,3 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
