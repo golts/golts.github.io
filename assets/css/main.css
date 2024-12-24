@@ -763,7 +763,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 5px;
   position: relative;
 }
 
@@ -1696,81 +1696,105 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item+.info-item {
-  margin-top: 40px;
-}
-
-.contact .info-item i {
-  color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  font-size: 20px;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 15px;
-}
-
-.contact .info-item h3 {
-  padding: 0;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.contact .info-item p {
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-}
-
-.contact .info-item:hover i {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.contact .php-email-form {
-  height: 100%;
-}
-
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
+.contact .php-email-form input[type=tel],
 .contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
+  font-size: 16px; /* Slightly larger text */
+  padding: 15px; /* Increase field height */
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 7px; /* Slightly rounded corners */
   color: var(--default-color);
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  margin-bottom: 1px; /* Add more space between fields */
+  width: 100%; /* Ensure equal width */
 }
 
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type=tel]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
-}
-
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  outline: none;
 }
 
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
   background: var(--accent-color);
-  border: 0;
-  padding: 10px 30px;
+  border: 1;
+  padding: 10px 15px; /* Adjust button size */
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 7px;
+  width: auto; /* Fit content */
 }
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+.form-check {
+  margin-top: 10px; /* Space above checkbox */
+  text-align: right; /* Align checkbox to the right */
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Space between title and form */
+}
+
+
+.contact-form-fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px; /* Adds consistent spacing between fields */
+}
+
+.contact-form-fields .form-control {
+  flex: 1;
+  min-width: 0;
+  width: calc(33.33% - 20px); /* Adjust field width dynamically */
+}
+
+.contact-checkbox {
+  text-align: right; /* Align checkbox and label to the right */
+  margin-top: 1px; /* Reduce space above */
+}
+
+.contact-checkbox .form-check {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: flex-start; /* Align to the right */
+  align-items: center; /* Vertically center the checkbox and label */
+  gap: 10px; /* Add spacing between the checkbox and text */
+}
+
+.contact-checkbox .form-check-input {
+  margin-left: 0; /* Reset any left margin applied */
+  margin-right: 5px; /* Add margin to the right for spacing */
+}
+
+.php-email-form input[type="text"],
+.php-email-form input[type="email"],
+.php-email-form input[type="tel"] {
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  width: 100%; /* Ensure full width in mobile */
+}
+
+@media (max-width: 768px) {
+  .contact-form-fields {
+    flex-direction: column;
+    gap: 15px; /* Increase spacing on smaller screens */
+  }
+
+  .contact-form-fields .form-control {
+    width: 100%; /* Fields take full width on mobile */
+  }
 }
 
 /*--------------------------------------------------------------
